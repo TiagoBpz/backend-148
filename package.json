@@ -1,28 +1,29 @@
 {
-  "name": "projeto",
-  "version": "1.0.0",
-  "description": "servidor de exemplo para turma 148",
-  "main": "index.ts",
+  "name": "my-vue-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "ts-node-dev ./src/index.ts",
-    "start": "node ./src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
-  "author": "Andre",
-  "license": "ISC",
   "dependencies": {
-    "@prisma/client": "^6.8.2",
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "http": "^0.0.1-security",
-    "ts-node-dev": "^2.0.0"
+    "axios": "^1.9.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.6.1"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.18",
-    "@types/express": "^5.0.2",
-    "@types/node": "^22.15.19",
-    "prisma": "^6.8.2",
-    "tsx": "^4.19.4",
-    "typescript": "^5.8.3"
+    "@eslint/js": "^9.25.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "eslint": "^9.25.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "vite": "^6.3.5"
   }
 }
